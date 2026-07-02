@@ -1,0 +1,49 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Local environments and IDE files
+.env
+.venv/
+venv/
+env/
+.idea/
+.vscode/
+
+# Runtime logs and generated checkpoints
+runs/
+save/
+*.pth
+*.pt
+*.ckpt
+
+# Raw/processed datasets and downloaded structural files
+dataset/
+data/blind_test/
+data/pdb_contacts/
+data/representations_cv/
+data/representations_independent/
+data/RNA_contact/
+data/RSM_data/
+data/independent_data.csv
+
+# Large or third-party manuscript reference files
+docs/deepmif.pdf
+docs/deeprsma_original.pdf
+docs/*_extracted_text.txt
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+acs-*.bib
+
+# Generated archives
+docs/overleaf/*.zip

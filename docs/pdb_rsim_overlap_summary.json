@@ -1,0 +1,15 @@
+{
+  "contact_samples": 484,
+  "independent_test_ligands": 48,
+  "pdb_ligands_with_valid_fingerprint": 484,
+  "independent_ligands_with_valid_fingerprint": 48,
+  "canonical_smiles_exact_matches": 23,
+  "independent_ligands_with_tanimoto_ge_0.90": 8,
+  "independent_ligands_with_tanimoto_ge_0.80": 9,
+  "max_ligand_tanimoto": 1.0,
+  "mean_ligand_tanimoto_best_match": 0.39690220882991917,
+  "pdb_rnas_with_window_identity_ge_0.90": 6,
+  "pdb_rnas_with_window_identity_ge_0.80": 8,
+  "max_rna_window_identity_to_independent_hiv": 1.0,
+  "mean_rna_window_identity_to_independent_hiv": 0.44896636817541113
+}

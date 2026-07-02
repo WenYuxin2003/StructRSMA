@@ -1,0 +1,6 @@
+﻿method,selection,seeds,pcc_mean,pcc_sd,scc_mean,scc_sd,rmse_mean,rmse_sd
+Contact500SkipAff,initial_best_pcc_checkpoint,3,0.581585,0.054699,0.574882,0.058985,0.915189,0.078774
+StructRSMA,best_pcc,3,0.587020,0.059030,0.584435,0.066283,0.869584,0.045109
+StructRSMA,best_scc,3,0.578553,0.071210,0.603830,0.042776,0.867109,0.044993
+StructRSMA,best_rmse,3,0.579193,0.060175,0.587257,0.032466,0.851825,0.041905
+
