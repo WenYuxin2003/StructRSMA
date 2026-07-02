@@ -4,16 +4,6 @@ StructRSMA is a contact-supervised extension of DeepRSMA for RNA-small molecule 
 
 This repository is prepared for manuscript review and reproducibility. It contains the model code, preprocessing scripts, training entry points, manuscript figures/tables, and environment specification. Large raw datasets, processed tensors, and trained checkpoints are not tracked by git; see `.gitignore` and `CONTACT_PRETRAINING.md` for data preparation details.
 
-## Relationship to DeepRSMA
-
-The implementation was developed from the public DeepRSMA codebase:
-
-DeepRSMA: a cross-fusion based deep learning method for RNA-small molecule binding affinity prediction.
-
-Original authors: Zhijian Huang, Yucheng Wang, Song Chen, Yaw Sing Tan, Lei Deng, and Min Wu.
-
-StructRSMA keeps the original RNA sequence, RNA graph, molecule sequence, molecule graph, cross-fusion, and affinity-prediction components, and adds the contact-supervised transfer components described in the manuscript.
-
 ## Repository Layout
 
 - `model/`: DeepRSMA backbone and StructRSMA contact/SCA modules.
@@ -22,8 +12,6 @@ StructRSMA keeps the original RNA sequence, RNA graph, molecule sequence, molecu
 - `pretrain_contact.py`: contact pretraining entry point.
 - `main_independent_contact.py`: independent-test affinity fine-tuning entry point with contact-pretrained initialization.
 - `CONTACT_PRETRAINING.md`: detailed contact-dataset construction and training instructions.
-- `docs/latex/`: manuscript source.
-- `docs/figures/` and `docs/tables/`: generated manuscript figures and result tables.
 
 ## Environment
 
@@ -71,20 +59,6 @@ On Windows PowerShell:
 ```powershell
 $env:DEEPRSMA_CONTACT_CKPT='save\contact_pretrain_rna_only_500.pth'
 python main_independent_contact.py
-```
-
-## Manuscript Materials
-
-The JCIM-style LaTeX manuscript source is in:
-
-```text
-docs/latex/structrsma_jcim.tex
-```
-
-The Overleaf-ready source directory is:
-
-```text
-docs/overleaf/structrsma_overleaf/
 ```
 
 ## Citation

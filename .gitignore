@@ -29,6 +29,7 @@ data/RSM_data/
 data/independent_data.csv
 
 # Large or third-party manuscript reference files
+docs/
 docs/deepmif.pdf
 docs/deeprsma_original.pdf
 docs/*_extracted_text.txt
