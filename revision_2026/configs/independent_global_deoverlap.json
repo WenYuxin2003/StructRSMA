@@ -1,0 +1,42 @@
+{
+  "description": "Strict independent test after global R-SIM de-overlap Contact270 pretraining.",
+  "epochs": 300,
+  "patience": 40,
+  "batch_size": 8,
+  "lr": 0.00006,
+  "weight_decay": 0.00001,
+  "val_ratio": 0.2,
+  "shuffle_train": false,
+  "runs": [
+    {
+      "protocol": "independent",
+      "run_name": "independent_global_deoverlap_seed1",
+      "model_label": "DeepRSMA + global-deoverlap Contact270 pretraining",
+      "seed": 1,
+      "split_seed": 2026,
+      "contact_checkpoint": "checkpoints/contact_pretrain_global_deoverlap_r80_l80.pth",
+      "contact_mode": "none",
+      "output_dir": "revision_2026/results/independent/global_deoverlap/seed1"
+    },
+    {
+      "protocol": "independent",
+      "run_name": "independent_global_deoverlap_seed2",
+      "model_label": "DeepRSMA + global-deoverlap Contact270 pretraining",
+      "seed": 2,
+      "split_seed": 2026,
+      "contact_checkpoint": "checkpoints/contact_pretrain_global_deoverlap_r80_l80.pth",
+      "contact_mode": "none",
+      "output_dir": "revision_2026/results/independent/global_deoverlap/seed2"
+    },
+    {
+      "protocol": "independent",
+      "run_name": "independent_global_deoverlap_seed3",
+      "model_label": "DeepRSMA + global-deoverlap Contact270 pretraining",
+      "seed": 3,
+      "split_seed": 2026,
+      "contact_checkpoint": "checkpoints/contact_pretrain_global_deoverlap_r80_l80.pth",
+      "contact_mode": "none",
+      "output_dir": "revision_2026/results/independent/global_deoverlap/seed3"
+    }
+  ]
+}

@@ -500,11 +500,11 @@ def plot_structure_case(args):
 def main():
     parser = argparse.ArgumentParser(description="Plot a PDB 3D structure case for contact prediction.")
     parser.add_argument("--data-dir", default="dataset/pdb_contact_rna_only_500")
-    parser.add_argument("--checkpoint", default="save/contact_pretrain_rna_only_500.pth")
+    parser.add_argument("--checkpoint", default="checkpoints/contact_pretrain_rna_only_500.pth")
     parser.add_argument("--pdb-id", default="3f4h")
     parser.add_argument("--ligand-resname", default="RS3")
     parser.add_argument("--example-index", type=int, default=None)
-    parser.add_argument("--out-dir", default="docs/figures")
+    parser.add_argument("--out-dir", default="revision_2026/figures_structure")
     parser.add_argument("--output-stem", default="fig_structure_case_3f4h")
     parser.add_argument("--top-k", type=int, default=None)
     parser.add_argument("--max-false-lines", type=int, default=6)

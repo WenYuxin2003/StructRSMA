@@ -1,0 +1,191 @@
+{
+  "description": "Three repeated clustered splits for cold RNA, cold scaffold, and double cold. DeepRSMA versus Contact500 initialization; no SCA ablations.",
+  "epochs": 100,
+  "patience": 15,
+  "batch_size": 16,
+  "lr": 0.0005,
+  "weight_decay": 0.0000001,
+  "shuffle_train": false,
+  "runs": [
+    {
+      "protocol": "clustered",
+      "split_file": "revision_2026/splits_strict_v1/cold_rna_seed2026.json",
+      "run_name": "cold_rna_split2026_deeprsma",
+      "model_label": "DeepRSMA",
+      "seed": 1,
+      "split_seed": 2026,
+      "output_dir": "revision_2026/results/cold/cold_rna/split2026/deeprsma"
+    },
+    {
+      "protocol": "clustered",
+      "split_file": "revision_2026/splits_strict_v1/cold_rna_seed2026.json",
+      "run_name": "cold_rna_split2026_contact500",
+      "model_label": "DeepRSMA + Contact500 pretraining",
+      "seed": 1,
+      "split_seed": 2026,
+      "contact_checkpoint": "checkpoints/contact_pretrain_rna_only_500.pth",
+      "contact_mode": "none",
+      "output_dir": "revision_2026/results/cold/cold_rna/split2026/contact500"
+    },
+    {
+      "protocol": "clustered",
+      "split_file": "revision_2026/splits_strict_v1/cold_rna_seed2027.json",
+      "run_name": "cold_rna_split2027_deeprsma",
+      "model_label": "DeepRSMA",
+      "seed": 1,
+      "split_seed": 2027,
+      "output_dir": "revision_2026/results/cold/cold_rna/split2027/deeprsma"
+    },
+    {
+      "protocol": "clustered",
+      "split_file": "revision_2026/splits_strict_v1/cold_rna_seed2027.json",
+      "run_name": "cold_rna_split2027_contact500",
+      "model_label": "DeepRSMA + Contact500 pretraining",
+      "seed": 1,
+      "split_seed": 2027,
+      "contact_checkpoint": "checkpoints/contact_pretrain_rna_only_500.pth",
+      "contact_mode": "none",
+      "output_dir": "revision_2026/results/cold/cold_rna/split2027/contact500"
+    },
+    {
+      "protocol": "clustered",
+      "split_file": "revision_2026/splits_strict_v1/cold_rna_seed2028.json",
+      "run_name": "cold_rna_split2028_deeprsma",
+      "model_label": "DeepRSMA",
+      "seed": 1,
+      "split_seed": 2028,
+      "output_dir": "revision_2026/results/cold/cold_rna/split2028/deeprsma"
+    },
+    {
+      "protocol": "clustered",
+      "split_file": "revision_2026/splits_strict_v1/cold_rna_seed2028.json",
+      "run_name": "cold_rna_split2028_contact500",
+      "model_label": "DeepRSMA + Contact500 pretraining",
+      "seed": 1,
+      "split_seed": 2028,
+      "contact_checkpoint": "checkpoints/contact_pretrain_rna_only_500.pth",
+      "contact_mode": "none",
+      "output_dir": "revision_2026/results/cold/cold_rna/split2028/contact500"
+    },
+    {
+      "protocol": "clustered",
+      "split_file": "revision_2026/splits_strict_v1/cold_scaffold_seed2026.json",
+      "run_name": "cold_scaffold_split2026_deeprsma",
+      "model_label": "DeepRSMA",
+      "seed": 1,
+      "split_seed": 2026,
+      "output_dir": "revision_2026/results/cold/cold_scaffold/split2026/deeprsma"
+    },
+    {
+      "protocol": "clustered",
+      "split_file": "revision_2026/splits_strict_v1/cold_scaffold_seed2026.json",
+      "run_name": "cold_scaffold_split2026_contact500",
+      "model_label": "DeepRSMA + Contact500 pretraining",
+      "seed": 1,
+      "split_seed": 2026,
+      "contact_checkpoint": "checkpoints/contact_pretrain_rna_only_500.pth",
+      "contact_mode": "none",
+      "output_dir": "revision_2026/results/cold/cold_scaffold/split2026/contact500"
+    },
+    {
+      "protocol": "clustered",
+      "split_file": "revision_2026/splits_strict_v1/cold_scaffold_seed2027.json",
+      "run_name": "cold_scaffold_split2027_deeprsma",
+      "model_label": "DeepRSMA",
+      "seed": 1,
+      "split_seed": 2027,
+      "output_dir": "revision_2026/results/cold/cold_scaffold/split2027/deeprsma"
+    },
+    {
+      "protocol": "clustered",
+      "split_file": "revision_2026/splits_strict_v1/cold_scaffold_seed2027.json",
+      "run_name": "cold_scaffold_split2027_contact500",
+      "model_label": "DeepRSMA + Contact500 pretraining",
+      "seed": 1,
+      "split_seed": 2027,
+      "contact_checkpoint": "checkpoints/contact_pretrain_rna_only_500.pth",
+      "contact_mode": "none",
+      "output_dir": "revision_2026/results/cold/cold_scaffold/split2027/contact500"
+    },
+    {
+      "protocol": "clustered",
+      "split_file": "revision_2026/splits_strict_v1/cold_scaffold_seed2028.json",
+      "run_name": "cold_scaffold_split2028_deeprsma",
+      "model_label": "DeepRSMA",
+      "seed": 1,
+      "split_seed": 2028,
+      "output_dir": "revision_2026/results/cold/cold_scaffold/split2028/deeprsma"
+    },
+    {
+      "protocol": "clustered",
+      "split_file": "revision_2026/splits_strict_v1/cold_scaffold_seed2028.json",
+      "run_name": "cold_scaffold_split2028_contact500",
+      "model_label": "DeepRSMA + Contact500 pretraining",
+      "seed": 1,
+      "split_seed": 2028,
+      "contact_checkpoint": "checkpoints/contact_pretrain_rna_only_500.pth",
+      "contact_mode": "none",
+      "output_dir": "revision_2026/results/cold/cold_scaffold/split2028/contact500"
+    },
+    {
+      "protocol": "clustered",
+      "split_file": "revision_2026/splits_strict_v1/double_cold_seed2026.json",
+      "run_name": "double_cold_split2026_deeprsma",
+      "model_label": "DeepRSMA",
+      "seed": 1,
+      "split_seed": 2026,
+      "output_dir": "revision_2026/results/cold/double_cold/split2026/deeprsma"
+    },
+    {
+      "protocol": "clustered",
+      "split_file": "revision_2026/splits_strict_v1/double_cold_seed2026.json",
+      "run_name": "double_cold_split2026_contact500",
+      "model_label": "DeepRSMA + Contact500 pretraining",
+      "seed": 1,
+      "split_seed": 2026,
+      "contact_checkpoint": "checkpoints/contact_pretrain_rna_only_500.pth",
+      "contact_mode": "none",
+      "output_dir": "revision_2026/results/cold/double_cold/split2026/contact500"
+    },
+    {
+      "protocol": "clustered",
+      "split_file": "revision_2026/splits_strict_v1/double_cold_seed2027.json",
+      "run_name": "double_cold_split2027_deeprsma",
+      "model_label": "DeepRSMA",
+      "seed": 1,
+      "split_seed": 2027,
+      "output_dir": "revision_2026/results/cold/double_cold/split2027/deeprsma"
+    },
+    {
+      "protocol": "clustered",
+      "split_file": "revision_2026/splits_strict_v1/double_cold_seed2027.json",
+      "run_name": "double_cold_split2027_contact500",
+      "model_label": "DeepRSMA + Contact500 pretraining",
+      "seed": 1,
+      "split_seed": 2027,
+      "contact_checkpoint": "checkpoints/contact_pretrain_rna_only_500.pth",
+      "contact_mode": "none",
+      "output_dir": "revision_2026/results/cold/double_cold/split2027/contact500"
+    },
+    {
+      "protocol": "clustered",
+      "split_file": "revision_2026/splits_strict_v1/double_cold_seed2028.json",
+      "run_name": "double_cold_split2028_deeprsma",
+      "model_label": "DeepRSMA",
+      "seed": 1,
+      "split_seed": 2028,
+      "output_dir": "revision_2026/results/cold/double_cold/split2028/deeprsma"
+    },
+    {
+      "protocol": "clustered",
+      "split_file": "revision_2026/splits_strict_v1/double_cold_seed2028.json",
+      "run_name": "double_cold_split2028_contact500",
+      "model_label": "DeepRSMA + Contact500 pretraining",
+      "seed": 1,
+      "split_seed": 2028,
+      "contact_checkpoint": "checkpoints/contact_pretrain_rna_only_500.pth",
+      "contact_mode": "none",
+      "output_dir": "revision_2026/results/cold/double_cold/split2028/contact500"
+    }
+  ]
+}

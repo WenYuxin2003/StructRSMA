@@ -1,0 +1,59 @@
+{
+  "contact_samples": 484,
+  "criteria": {
+    "rna": "global normalized edit identity >= 0.8",
+    "ligand": "Morgan radius-2 2048-bit Tanimoto >= 0.8",
+    "scaffold": "Bemis-Murcko exact match",
+    "pair": "maximum over Contact500 complexes of min(RNA identity, ligand Tanimoto)"
+  },
+  "R-SIM_all": {
+    "samples": 1439,
+    "rna_identity_ge_threshold": 462,
+    "ligand_tanimoto_ge_threshold": 279,
+    "pair_min_similarity_ge_threshold": 46,
+    "exact_ligand_matches": 49,
+    "exact_scaffold_matches": 341,
+    "rna_bins": {
+      "[0.4,0.6)": 707,
+      "[0.8,1.0]": 462,
+      "[0.6,0.8)": 219,
+      "[0.0,0.4)": 51
+    },
+    "ligand_bins": {
+      "[0.0,0.4)": 877,
+      "[0.8,1.0]": 279,
+      "[0.4,0.6)": 172,
+      "[0.6,0.8)": 111
+    },
+    "pair_bins": {
+      "[0.0,0.4)": 932,
+      "[0.4,0.6)": 363,
+      "[0.6,0.8)": 98,
+      "[0.8,1.0]": 46
+    }
+  },
+  "independent_test": {
+    "samples": 48,
+    "rna_identity_ge_threshold": 48,
+    "ligand_tanimoto_ge_threshold": 9,
+    "pair_min_similarity_ge_threshold": 0,
+    "exact_ligand_matches": 8,
+    "exact_scaffold_matches": 13,
+    "rna_bins": {
+      "[0.8,1.0]": 48
+    },
+    "ligand_bins": {
+      "[0.0,0.4)": 34,
+      "[0.8,1.0]": 9,
+      "[0.4,0.6)": 3,
+      "[0.6,0.8)": 2
+    },
+    "pair_bins": {
+      "[0.0,0.4)": 35,
+      "[0.4,0.6)": 11,
+      "[0.6,0.8)": 2
+    }
+  },
+  "global_or_rule_contact_samples_excluded": 214,
+  "global_or_rule_contact_samples_retained": 270
+}

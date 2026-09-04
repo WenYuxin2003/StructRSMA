@@ -1,0 +1,8 @@
+variant,pcc_mean,pcc_sd,scc_mean,scc_sd,rmse_mean,rmse_sd,interpretation
+DeepRSMA strict,0.387,0.022,0.345,,0.970,0.012,Strict backbone baseline
+Contact500 no SCA,0.418,0.048,0.372,0.041,0.951,0.023,Contact-pretraining contribution without adapter
+SCA no contact pretraining,0.404,0.039,0.359,0.036,0.958,0.025,Adapter without structural pretraining
+Shuffled-contact plus SCA,0.407,0.043,0.363,0.039,0.956,0.027,Randomized structural-supervision control
+Parameter-matched residual adapter,0.411,0.035,0.366,0.033,0.953,0.021,Capacity-matched control
+True-contact plus full SCA,0.441,0.037,0.397,0.034,0.918,0.020,Complete StructRSMA
+

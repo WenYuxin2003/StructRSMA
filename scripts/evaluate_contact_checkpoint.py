@@ -374,9 +374,9 @@ def write_markdown(metrics, checkpoint_info, example_info, out_path):
 def main():
     parser = argparse.ArgumentParser(description="Evaluate a contact-pretrained DeepRSMA checkpoint.")
     parser.add_argument("--data-dir", default="dataset/pdb_contact_rna_only_500")
-    parser.add_argument("--checkpoint", default="save/contact_pretrain_rna_only_500.pth")
-    parser.add_argument("--out-dir", default="docs/figures")
-    parser.add_argument("--metrics-out", default="docs/contact_checkpoint_metrics_500.md")
+    parser.add_argument("--checkpoint", default="checkpoints/contact_pretrain_rna_only_500.pth")
+    parser.add_argument("--out-dir", default="revision_2026/figures_contact")
+    parser.add_argument("--metrics-out", default="revision_2026/statistics/contact_checkpoint_metrics_500.md")
     parser.add_argument("--batch-size", type=int, default=2)
     parser.add_argument("--val-ratio", type=float, default=0.1)
     parser.add_argument("--seed", type=int, default=1)

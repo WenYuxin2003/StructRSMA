@@ -116,7 +116,7 @@ def main():
     parser.add_argument("--independent-rna-sequence", default=INDEPENDENT_RNA_SEQUENCE)
     parser.add_argument("--ligand-threshold", type=float, default=0.80)
     parser.add_argument("--rna-threshold", type=float, default=0.80)
-    parser.add_argument("--report-dir", default="docs")
+    parser.add_argument("--report-dir", default="revision_2026/audit/deoverlap_legacy")
     args = parser.parse_args()
 
     in_dir = Path(args.in_dir)

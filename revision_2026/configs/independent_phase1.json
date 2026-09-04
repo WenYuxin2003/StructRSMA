@@ -1,0 +1,66 @@
+{
+  "description": "Strict independent test: DeepRSMA versus Contact500 initialization. SCA and attribution ablations excluded.",
+  "epochs": 300,
+  "patience": 40,
+  "batch_size": 8,
+  "lr": 0.00006,
+  "weight_decay": 0.00001,
+  "val_ratio": 0.2,
+  "shuffle_train": false,
+  "runs": [
+    {
+      "protocol": "independent",
+      "run_name": "independent_deeprsma_seed1",
+      "model_label": "DeepRSMA",
+      "seed": 1,
+      "split_seed": 2026,
+      "output_dir": "revision_2026/results/independent/deeprsma/seed1"
+    },
+    {
+      "protocol": "independent",
+      "run_name": "independent_deeprsma_seed2",
+      "model_label": "DeepRSMA",
+      "seed": 2,
+      "split_seed": 2026,
+      "output_dir": "revision_2026/results/independent/deeprsma/seed2"
+    },
+    {
+      "protocol": "independent",
+      "run_name": "independent_deeprsma_seed3",
+      "model_label": "DeepRSMA",
+      "seed": 3,
+      "split_seed": 2026,
+      "output_dir": "revision_2026/results/independent/deeprsma/seed3"
+    },
+    {
+      "protocol": "independent",
+      "run_name": "independent_contact500_seed1",
+      "model_label": "DeepRSMA + Contact500 pretraining",
+      "seed": 1,
+      "split_seed": 2026,
+      "contact_checkpoint": "checkpoints/contact_pretrain_rna_only_500.pth",
+      "contact_mode": "none",
+      "output_dir": "revision_2026/results/independent/contact500/seed1"
+    },
+    {
+      "protocol": "independent",
+      "run_name": "independent_contact500_seed2",
+      "model_label": "DeepRSMA + Contact500 pretraining",
+      "seed": 2,
+      "split_seed": 2026,
+      "contact_checkpoint": "checkpoints/contact_pretrain_rna_only_500.pth",
+      "contact_mode": "none",
+      "output_dir": "revision_2026/results/independent/contact500/seed2"
+    },
+    {
+      "protocol": "independent",
+      "run_name": "independent_contact500_seed3",
+      "model_label": "DeepRSMA + Contact500 pretraining",
+      "seed": 3,
+      "split_seed": 2026,
+      "contact_checkpoint": "checkpoints/contact_pretrain_rna_only_500.pth",
+      "contact_mode": "none",
+      "output_dir": "revision_2026/results/independent/contact500/seed3"
+    }
+  ]
+}

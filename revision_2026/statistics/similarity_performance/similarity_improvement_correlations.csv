@@ -1,0 +1,31 @@
+setting,model,similarity,n,spearman_rho,spearman_p
+cold_rna,Contact500 pretraining without SCA,max_rna_global_identity,960,-0.18007497935541508,1.9302722799916695e-08
+cold_rna,Contact500 pretraining without SCA,max_ligand_tanimoto,960,0.016626107316072967,0.6068986181603374
+cold_rna,Contact500 pretraining without SCA,pair_min_similarity,960,-0.005533429260461197,0.864046871362396
+cold_rna,StructRSMA: Contact500 pretraining plus SCA,max_rna_global_identity,297,-0.16862579835421418,0.003560422824165016
+cold_rna,StructRSMA: Contact500 pretraining plus SCA,max_ligand_tanimoto,297,-0.08080854907626997,0.1648238495366873
+cold_rna,StructRSMA: Contact500 pretraining plus SCA,pair_min_similarity,297,-0.11495663119255357,0.047777859315404146
+cold_scaffold,Contact500 pretraining without SCA,max_rna_global_identity,920,-0.0671579403494126,0.04169703212571853
+cold_scaffold,Contact500 pretraining without SCA,max_ligand_tanimoto,920,-0.14824908241477816,6.317434214317876e-06
+cold_scaffold,Contact500 pretraining without SCA,pair_min_similarity,920,-0.1665037110828546,3.7955634077237324e-07
+cold_scaffold,StructRSMA: Contact500 pretraining plus SCA,max_rna_global_identity,322,-0.19299901456649843,0.0004966189057711417
+cold_scaffold,StructRSMA: Contact500 pretraining plus SCA,max_ligand_tanimoto,322,-0.05321617078909675,0.3411522445567717
+cold_scaffold,StructRSMA: Contact500 pretraining plus SCA,pair_min_similarity,322,-0.08427195678940937,0.13129603638424003
+double_cold,Contact500 pretraining without SCA,max_rna_global_identity,608,-0.018267752325602005,0.6530345723354278
+double_cold,Contact500 pretraining without SCA,max_ligand_tanimoto,608,-0.03424875245948815,0.3992265289096375
+double_cold,Contact500 pretraining without SCA,pair_min_similarity,608,-0.036304692528321185,0.371513972886933
+double_cold,StructRSMA: Contact500 pretraining plus SCA,max_rna_global_identity,170,0.2567261095256266,0.0007263794031283894
+double_cold,StructRSMA: Contact500 pretraining plus SCA,max_ligand_tanimoto,170,0.17349537000295795,0.02366035447796242
+double_cold,StructRSMA: Contact500 pretraining plus SCA,pair_min_similarity,170,0.21566188325216692,0.004736097681335416
+independent,Contact500 pretraining without SCA,max_rna_global_identity,144,,
+independent,Contact500 pretraining without SCA,max_ligand_tanimoto,144,0.04547681716718732,0.588338199183022
+independent,Contact500 pretraining without SCA,pair_min_similarity,144,0.04547681716718732,0.588338199183022
+independent,Global-deoverlap Contact270 pretraining without SCA,max_rna_global_identity,144,,
+independent,Global-deoverlap Contact270 pretraining without SCA,max_ligand_tanimoto,144,-0.0909596785684479,0.2782528538135654
+independent,Global-deoverlap Contact270 pretraining without SCA,pair_min_similarity,144,-0.0909596785684479,0.2782528538135654
+independent,StructRSMA: Contact270 pretraining plus SCA,max_rna_global_identity,144,,
+independent,StructRSMA: Contact270 pretraining plus SCA,max_ligand_tanimoto,144,-0.1331484323997833,0.11162126920149217
+independent,StructRSMA: Contact270 pretraining plus SCA,pair_min_similarity,144,-0.1331484323997833,0.11162126920149217
+independent,StructRSMA: Contact500 pretraining plus SCA,max_rna_global_identity,144,,
+independent,StructRSMA: Contact500 pretraining plus SCA,max_ligand_tanimoto,144,0.15002997816639072,0.07267889563419423
+independent,StructRSMA: Contact500 pretraining plus SCA,pair_min_similarity,144,0.15002997816639072,0.07267889563419423

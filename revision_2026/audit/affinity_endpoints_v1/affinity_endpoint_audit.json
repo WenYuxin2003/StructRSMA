@@ -1,0 +1,21 @@
+{
+  "local_rsim_schema": {
+    "stored_response": "pKd only",
+    "raw_Kd_present": false,
+    "raw_units_present": false,
+    "assay_method_present": false,
+    "per_entry_reference_present": false
+  },
+  "independent_schema": {
+    "stored_response": "KD",
+    "conversion_in_code": "pKd = -log10(KD)",
+    "inferred_unit": "molar, consistent with the source values and DeepRSMA preprocessing",
+    "unit_column_present": false
+  },
+  "source_method": {
+    "R_SIM_database_scope": "The database contains Ka, Kd, Ki, IC50, and EC50 records.",
+    "RSAPred_model_subset": "Only Kd-quantified entries were retained; all Kd values were converted to molar before -log10 transformation.",
+    "DeepRSMA_statement": "The processed 1,439-pair benchmark uses pKd as negative log10 dissociation constant."
+  },
+  "auditable_conclusion": "The local 1,439-pair benchmark is a Kd-derived pKd task according to the source methods, but its distributed CSV no longer contains per-entry raw Kd, unit, assay method, or citation fields. Therefore formula/range checks are possible, whereas per-entry assay and unit re-auditing is not."
+}

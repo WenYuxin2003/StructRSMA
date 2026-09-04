@@ -1,0 +1,35 @@
+{
+  "data_dirs": [
+    "revision_2026/data/contact_cutoff_35",
+    "revision_2026/data/contact_cutoff_40",
+    "revision_2026/data/contact_cutoff_45",
+    "revision_2026/data/contact_cutoff_50"
+  ],
+  "common_samples": 486,
+  "rna_clusters": 150,
+  "scaffold_groups": 122,
+  "rna_identity_threshold": 0.8,
+  "splits": [
+    {
+      "file": "contact_grouped_seed2026.json",
+      "train": 64,
+      "validation": 22,
+      "test": 62,
+      "discarded": 338
+    },
+    {
+      "file": "contact_grouped_seed2027.json",
+      "train": 47,
+      "validation": 15,
+      "test": 50,
+      "discarded": 374
+    },
+    {
+      "file": "contact_grouped_seed2028.json",
+      "train": 64,
+      "validation": 36,
+      "test": 66,
+      "discarded": 320
+    }
+  ]
+}

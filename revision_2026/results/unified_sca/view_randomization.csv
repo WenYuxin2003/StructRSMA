@@ -1,0 +1,8 @@
+attribution_control,rmse
+Full SCA,0.918
+Permute RNA-side SCA views,0.938
+Permute ligand-side SCA views,0.934
+Permute all four pooled views,0.945
+Permute contact statistics,0.949
+Permute views and contact statistics,0.953
+

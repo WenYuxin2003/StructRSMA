@@ -1,0 +1,67 @@
+{
+  "initial_rcsb_ids": 500,
+  "metadata_rows": 486,
+  "built_complexes": 484,
+  "excluded_during_metadata_preparation": 14,
+  "excluded_during_contact_build": 2,
+  "unique_exact_rna_sequences": 292,
+  "rna_sequence_clusters_at_threshold": {
+    "threshold": 0.8,
+    "identity_definition": "1 - global_edit_distance / max(sequence lengths)",
+    "clusters": 148,
+    "linked_pairs": 717,
+    "unique_sequences": 292
+  },
+  "unique_ligand_resnames": 188,
+  "unique_canonical_ligands": 187,
+  "unique_scaffolds": 120,
+  "experimental_methods": {
+    "X-RAY DIFFRACTION": 424,
+    "SOLUTION NMR": 60
+  },
+  "resolution_angstrom": {
+    "n": 424,
+    "min": 0.61,
+    "q1": 2.115,
+    "median": 2.6,
+    "q3": 2.9,
+    "max": 7.5
+  },
+  "rna_length": {
+    "n": 484,
+    "min": 4.0,
+    "q1": 21.0,
+    "median": 37.5,
+    "q3": 83.0,
+    "max": 396.0
+  },
+  "ligand_heavy_atoms": {
+    "n": 484,
+    "min": 7.0,
+    "q1": 15.75,
+    "median": 25.0,
+    "q3": 32.0,
+    "max": 109.0
+  },
+  "positive_contacts": {
+    "n": 484,
+    "min": 1.0,
+    "q1": 15.0,
+    "median": 25.0,
+    "q3": 39.0,
+    "max": 101.0
+  },
+  "contact_density": {
+    "n": 484,
+    "min": 0.0011784511784511784,
+    "q1": 0.015261615350058747,
+    "median": 0.031058253340862034,
+    "q3": 0.052945499773857985,
+    "max": 0.17687074829931973
+  },
+  "complexes_with_multiple_same_resname_copies": 186,
+  "complexes_with_partial_occupancy_selected_ligand": 44,
+  "complexes_with_altloc_records": 72,
+  "complexes_with_link_records_involving_ligand": 191,
+  "complexes_with_noncanonical_residue_names_on_rna_chain": 283
+}

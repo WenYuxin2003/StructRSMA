@@ -1,0 +1,81 @@
+{
+  "source": "data/RSM_data/All_sf_dataset_v1.csv",
+  "rows": 1439,
+  "unique_exact_rna_sequences": 294,
+  "rna_cluster_stats": {
+    "threshold": 0.8,
+    "identity_definition": "1 - global_edit_distance / max(sequence lengths)",
+    "clustering": "single-linkage connected components",
+    "unique_sequences": 294,
+    "clusters": 157,
+    "comparisons": 43071,
+    "pairs_at_or_above_threshold": 946,
+    "largest_cluster_unique_sequences": 31
+  },
+  "unique_bemis_murcko_scaffolds_with_exact_fallback": 484,
+  "splits": [
+    {
+      "file": "cold_rna_seed2026.json",
+      "train": 973,
+      "validation": 169,
+      "test": 297,
+      "discarded": 0
+    },
+    {
+      "file": "cold_scaffold_seed2026.json",
+      "train": 969,
+      "validation": 148,
+      "test": 322,
+      "discarded": 0
+    },
+    {
+      "file": "double_cold_seed2026.json",
+      "train": 197,
+      "validation": 107,
+      "test": 170,
+      "discarded": 965
+    },
+    {
+      "file": "cold_rna_seed2027.json",
+      "train": 873,
+      "validation": 194,
+      "test": 372,
+      "discarded": 0
+    },
+    {
+      "file": "cold_scaffold_seed2027.json",
+      "train": 1002,
+      "validation": 145,
+      "test": 292,
+      "discarded": 0
+    },
+    {
+      "file": "double_cold_seed2027.json",
+      "train": 279,
+      "validation": 76,
+      "test": 234,
+      "discarded": 850
+    },
+    {
+      "file": "cold_rna_seed2028.json",
+      "train": 1003,
+      "validation": 145,
+      "test": 291,
+      "discarded": 0
+    },
+    {
+      "file": "cold_scaffold_seed2028.json",
+      "train": 986,
+      "validation": 147,
+      "test": 306,
+      "discarded": 0
+    },
+    {
+      "file": "double_cold_seed2028.json",
+      "train": 282,
+      "validation": 64,
+      "test": 204,
+      "discarded": 889
+    }
+  ]
+}

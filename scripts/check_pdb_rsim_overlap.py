@@ -250,7 +250,7 @@ def main():
     parser = argparse.ArgumentParser(description="Check overlap between PDB contact pretraining data and R-SIM independent test.")
     parser.add_argument("--contact-data-dir", default="dataset/pdb_contact_rna_only_500")
     parser.add_argument("--independent-csv", default="data/independent_data.csv")
-    parser.add_argument("--out-dir", default="docs")
+    parser.add_argument("--out-dir", default="revision_2026/audit/overlap_legacy")
     parser.add_argument("--independent-rna-sequence", default=INDEPENDENT_RNA_SEQUENCE)
     args = parser.parse_args()
 

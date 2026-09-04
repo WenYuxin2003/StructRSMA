@@ -44,7 +44,7 @@ RNA-FM embeddings.
 Query candidate PDB IDs from RCSB:
 
 ```powershell
-D:\shiyan\DeepRSMA\.envs\deeprsma-gpu\python.exe scripts\query_rcsb_rna_ligands.py `
+python scripts\query_rcsb_rna_ligands.py `
   --out data\pdb_contacts\pdb_ids.txt `
   --max-results 200
 ```
@@ -59,7 +59,7 @@ For a first real-structure smoke test, download PDB files and infer the RNA
 chain, ligand residue, ligand chain, ligand residue number, and ligand SMILES:
 
 ```powershell
-D:\shiyan\DeepRSMA\.envs\deeprsma-gpu\python.exe scripts\prepare_pdb_contacts.py `
+python scripts\prepare_pdb_contacts.py `
   --pdb-ids 1fmn 1uud `
   --pdb-dir data\pdb_contacts\pdb `
   --ccd-dir data\pdb_contacts\ccd `
@@ -73,7 +73,7 @@ For batch use, put one PDB ID per line in a text file and pass
 ## Build contact samples
 
 ```powershell
-D:\shiyan\DeepRSMA\.envs\deeprsma-gpu\python.exe scripts\build_pdb_contact_dataset.py `
+python scripts\build_pdb_contact_dataset.py `
   --pdb-dir data\pdb_contacts\pdb `
   --metadata data\pdb_contacts\metadata.csv `
   --embedding-dir data\pdb_contacts\rnafm `
@@ -86,7 +86,7 @@ within 4 Angstrom of ligand atom `j`.
 Summarize the generated contact samples:
 
 ```powershell
-D:\shiyan\DeepRSMA\.envs\deeprsma-gpu\python.exe scripts\summarize_contact_dataset.py `
+python scripts\summarize_contact_dataset.py `
   --data-dir dataset\pdb_contact
 ```
 
@@ -98,7 +98,7 @@ orders.
 ## Contact pretraining
 
 ```powershell
-D:\shiyan\DeepRSMA\.envs\deeprsma-gpu\python.exe pretrain_contact.py `
+python pretrain_contact.py `
   --data-dir dataset\pdb_contact `
   --save-path save\contact_pretrain.pth `
   --epochs 30 `
@@ -123,7 +123,7 @@ loss.
 $env:DEEPRSMA_CONTACT_CKPT='save\contact_pretrain.pth'
 $env:DEEPRSMA_EPOCH='200'
 $env:DEEPRSMA_BATCH_SIZE='8'
-D:\shiyan\DeepRSMA\.envs\deeprsma-gpu\python.exe main_independent_contact.py
+python main_independent_contact.py
 ```
 
 The fine-tuning script saves the best independent-test checkpoint to:
@@ -135,7 +135,7 @@ save\model_independent_contact_<seed>.pth
 Summarize independent-setting logs:
 
 ```powershell
-D:\shiyan\DeepRSMA\.envs\deeprsma-gpu\python.exe scripts\summarize_independent_log.py `
+python scripts\summarize_independent_log.py `
   runs\independent_full_gpu.log `
   runs\independent_contact_rna_only_100_seed1.log
 ```

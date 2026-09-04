@@ -1,0 +1,17 @@
+pdb_id,stage,reason
+1kd3,metadata_preparation,no RNA ligand rows inferred
+1nbs,metadata_preparation,no RNA ligand rows inferred
+1y73,metadata_preparation,no RNA ligand rows inferred
+1y95,metadata_preparation,no RNA ligand rows inferred
+2a2e,metadata_preparation,no RNA ligand rows inferred
+2jja,metadata_preparation,no RNA ligand rows inferred
+2oij,metadata_preparation,no RNA ligand rows inferred
+2wna,metadata_preparation,no RNA ligand rows inferred
+2x2q,metadata_preparation,no RNA ligand rows inferred
+359d,metadata_preparation,no RNA ligand rows inferred
+3dhs,metadata_preparation,no RNA ligand rows inferred
+4en5,metadata_preparation,no RNA ligand rows inferred
+4u47,metadata_preparation,no RNA ligand rows inferred
+6pmo,metadata_preparation,no RNA ligand rows inferred
+1y0q,contact_map_build,too few contacts: 0 < 1
+4jiy,contact_map_build,too few contacts: 0 < 1

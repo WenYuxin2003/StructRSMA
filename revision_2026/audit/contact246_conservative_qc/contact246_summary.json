@@ -1,0 +1,12 @@
+{
+  "source_positive_contact_complexes": 484,
+  "retained_complexes": 246,
+  "excluded_complexes": 238,
+  "rules": {
+    "resolution": "X-ray resolution <=4.0 A; solution NMR retained",
+    "linked_ligands": "exclude any selected ligand with a PDB LINK record",
+    "partial_occupancy": "exclude selected ligands containing atoms with occupancy <0.999",
+    "alternate_locations": "exclude structures containing any alternate-location atom records"
+  },
+  "interpretation": "Conservative sensitivity subset. LINK is treated as a broad linked/covalent-risk flag, so this filter may exclude noncovalent coordination records as well."
+}

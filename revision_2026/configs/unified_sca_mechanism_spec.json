@@ -1,0 +1,40 @@
+{
+  "name": "Unified SCA Mechanism Ablation",
+  "target": "pKd",
+  "selection_metric": "validation_rmse",
+  "test_evaluations_during_training": 0,
+  "test_evaluations_after_checkpoint_selection": 1,
+  "independent_training_seeds": [1, 2, 3],
+  "cold_split_seeds": [2026, 2027, 2028],
+  "contact_head_during_affinity_training": "frozen",
+  "shared_encoders_during_affinity_training": "fine_tuned",
+  "fair_controls": [
+    "DeepRSMA strict",
+    "Contact500 no SCA",
+    "SCA no contact pretraining",
+    "Shuffled-contact plus SCA",
+    "Parameter-matched residual adapter",
+    "True-contact plus full SCA"
+  ],
+  "contact_statistics": ["density", "maxprob", "rnafocus", "atomfocus"],
+  "feature_controls": [
+    "remove_each_statistic",
+    "permute_all_contact_statistics",
+    "zero_all_contact_statistics"
+  ],
+  "view_controls": [
+    "permute_rna_side_sca_views",
+    "permute_ligand_side_sca_views",
+    "permute_all_four_pooled_views",
+    "permute_contact_statistics",
+    "permute_views_and_contact_statistics"
+  ],
+  "cold_settings": ["cold_rna", "cold_scaffold", "double_cold"],
+  "reported_metrics": ["PCC", "SCC", "RMSE", "MAE"],
+  "summary_tables": [
+    "revision_2026/results/unified_sca/fair_control_ablation.csv",
+    "revision_2026/results/unified_sca/feature_ablation.csv",
+    "revision_2026/results/unified_sca/view_randomization.csv",
+    "revision_2026/results/unified_sca/cold_results.csv"
+  ]
+}

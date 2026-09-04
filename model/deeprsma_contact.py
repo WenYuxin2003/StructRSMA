@@ -130,6 +130,7 @@ class DeepRSMAContact(nn.Module):
         contact_guided=False,
         contact_mode=None,
         contact_chunk_size=64,
+        contact_stat_mode="predicted",
     ):
         super().__init__()
         self.hidden_dim = hidden_dim
@@ -147,6 +148,9 @@ class DeepRSMAContact(nn.Module):
         self.contact_mode = contact_mode
         self.contact_guided = contact_mode != "none"
         self.contact_chunk_size = contact_chunk_size
+        if contact_stat_mode not in {"predicted", "zero"}:
+            raise ValueError(f"Unsupported contact_stat_mode: {contact_stat_mode}")
+        self.contact_stat_mode = contact_stat_mode
 
         self.rna_graph_model = RNA_feature_extraction(hidden_dim)
         self.mole_graph_model = GNN_molecule(hidden_dim)
@@ -350,6 +354,14 @@ class DeepRSMAContact(nn.Module):
         return self.contact_head(rna_tokens, atom_tokens)
 
     def contact_prior_stats_from_encoded(self, encoded):
+        if self.contact_stat_mode == "zero":
+            batch_size = encoded["out_rna"].size(0)
+            return torch.zeros(
+                (batch_size, 4),
+                dtype=encoded["out_rna"].dtype,
+                device=encoded["out_rna"].device,
+            )
+
         rna_tokens, atom_tokens = self.contact_tokens_from_encoded(encoded)
         rna_mask = encoded["rna_mask_graph"]
         atom_mask = encoded["mole_mask_graph"]

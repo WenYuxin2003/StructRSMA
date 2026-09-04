@@ -1,50 +1,41 @@
-# Python caches
+# Python and editor files
 __pycache__/
 *.py[cod]
-*.pyo
-
-# Local environments and IDE files
-.env
+.idea/
+.vscode/
 .venv/
 venv/
 env/
-.idea/
-.vscode/
 
-# Runtime logs and generated checkpoints
+# Runtime outputs
 runs/
 save/
-*.pth
-*.pt
-*.ckpt
+*.log
+*.tmp
 
-# Raw/processed datasets and downloaded structural files
+# Raw structures and generated datasets
 dataset/
-data/blind_test/
-data/pdb_contacts/
+data/pdb_contacts/pdb/
+data/pdb_contacts/cif/
 data/representations_cv/
 data/representations_independent/
 data/RNA_contact/
 data/RSM_data/
 data/independent_data.csv
+data/blind_test/
 
-# Large or third-party manuscript reference files
+# Model weights are release assets, except the tracked Contact500 initializer
+*.pth
+*.pt
+*.ckpt
+!checkpoints/contact_pretrain_rna_only_500.pth
+!checkpoints/contact_pretrain_global_deoverlap_r80_l80.pth
+!checkpoints/contact_pretrain_rna_only_500_shuffle.pth
+
+# Manuscript and local build files
 docs/
-docs/deepmif.pdf
-docs/deeprsma_original.pdf
-docs/*_extracted_text.txt
-
-# LaTeX build artifacts
 *.aux
 *.bbl
 *.blg
-*.fdb_latexmk
-*.fls
-*.log
 *.out
 *.synctex.gz
-*.toc
-acs-*.bib
-
-# Generated archives
-docs/overleaf/*.zip

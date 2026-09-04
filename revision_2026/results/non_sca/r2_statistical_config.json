@@ -1,0 +1,7 @@
+{
+  "training_or_split_repeats": 3,
+  "bootstrap_type": "paired hierarchical resampling of matched runs and test examples",
+  "bootstrap_iterations": 2000,
+  "bootstrap_seed": 2026,
+  "aggregate_ci": "two-sided t interval across three repeated runs/splits"
+}
