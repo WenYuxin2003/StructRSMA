@@ -1,11 +1,11 @@
-# DeepRSMA reproduction status for Reviewer 2
+# DeepRSMA Controlled Reproduction Protocol
 
 ## Code provenance
 
 The baseline is a local reproduction built directly on the public DeepRSMA
 implementation and data-processing classes available in this repository. The
 four feature branches, cross-fusion transformer, and base affinity head are the
-DeepRSMA implementation; the strict revision runner adds experiment control and
+DeepRSMA implementation; the strict experiment runner adds protocol control and
 logging but does not redesign the baseline architecture.
 
 ## Published and local protocols
@@ -14,7 +14,7 @@ The DeepRSMA paper reports independent-test PCC 0.490, SCC 0.499, and RMSE
 0.920, averaged over three seeds. Its independent setting uses 141 filtered
 viral-RNA training pairs and 48 HIV-1 TAR test pairs.
 
-The Reviewer-2 controlled reproduction uses the same 141/48 data construction,
+The controlled reproduction uses the same 141/48 data construction,
 but separates 28 of the 141 development pairs into a fixed scaffold-disjoint
 validation set. Every neural variant therefore trains on 113 pairs, selects a
 checkpoint using validation RMSE only, restores that checkpoint, and evaluates

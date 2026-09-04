@@ -265,7 +265,7 @@ def per_target(predictions):
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Summarize Reviewer-2 affinity experiments.")
+    parser = argparse.ArgumentParser(description="Summarize affinity evaluation experiments.")
     parser.add_argument("--bootstrap-iterations", type=int, default=2000)
     parser.add_argument("--bootstrap-seed", type=int, default=2026)
     return parser.parse_args()

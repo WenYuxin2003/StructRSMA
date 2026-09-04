@@ -2,7 +2,7 @@
 
 StructRSMA is a contact-supervised transfer framework for RNA-small-molecule binding-affinity prediction. It preserves the four-view DeepRSMA backbone (RNA sequence, RNA graph, molecule sequence, and molecule graph), adds nucleotide-atom contact pretraining from experimentally resolved PDB complexes, and uses a Structural Contact Adapter (SCA) for residual pKd calibration.
 
-This release is organized for the ACS Omega revision. It contains executable preprocessing and de-overlap code, model and training code, fixed split definitions, experiment configurations, result tables, analysis scripts, compact reviewer figures, environment records, and PDB/R-SIM identifiers. Raw PDB structures, generated tensors, RNA-FM representations, and R-SIM source tables are not redistributed.
+This repository contains executable preprocessing and de-overlap code, model and training code, fixed split definitions, experiment configurations, result tables, analysis scripts, evaluation figures, environment records, and PDB/R-SIM identifiers. Raw PDB structures, generated tensors, RNA-FM representations, and R-SIM source tables are not redistributed.
 
 ## Repository structure
 
@@ -16,11 +16,9 @@ revision_2026/splits_*/        Fixed independent, cold, and contact splits
 revision_2026/audit/           PDB curation, overlap, endpoint, and protocol audits
 revision_2026/results/         Machine-readable final result tables
 revision_2026/statistics/      Contact and similarity analyses
-revision_2026/figures_r2/      Compact reviewer figures in PNG/SVG/PDF
-checkpoints/                   Contact500 initializer and weight-release instructions
+revision_2026/figures_r2/      Evaluation figures in PNG/SVG/PDF
+checkpoints/                   Contact-pretraining checkpoints and checksums
 ```
-
-The manuscript source and private revision correspondence are intentionally not included.
 
 ## Environment
 
@@ -29,7 +27,7 @@ conda env create -f environment.yml
 conda activate py37
 ```
 
-The environment used for the revision is additionally recorded in `revision_2026/environment/`. GPU/CUDA details are descriptive; equivalent supported CUDA hardware may be used.
+The recorded software and GPU/CUDA environment is available in `revision_2026/environment/`. Equivalent supported CUDA hardware may be used.
 
 ## Required external data
 
@@ -125,13 +123,8 @@ python revision_2026/scripts/make_unified_sca_figure.py
 
 ## Checkpoints
 
-`checkpoints/contact_pretrain_rna_only_500.pth` is the Contact500 pretrained initializer. Final affinity checkpoints should be attached to the GitHub release described in `checkpoints/README.md`; SHA-256 values must be updated after upload.
-
-## Reproducibility index
-
-See `REVIEWER_REPRODUCIBILITY.md` for the one-to-one mapping between Reviewer 1/2 requests and repository artifacts.
+Three contact-pretraining checkpoints are included in `checkpoints/`: the Contact500 initializer, the globally de-overlapped Contact270 initializer, and the shuffled-contact negative control. SHA-256 checksums are provided in `checkpoints/SHA256SUMS.txt`.
 
 ## Citation
 
 Please cite the StructRSMA manuscript and the original DeepRSMA publication when using this code.
-

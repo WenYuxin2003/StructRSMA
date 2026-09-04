@@ -40,7 +40,7 @@ COLORS = {
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Generate submission-grade R2 revision figures.")
+    parser = argparse.ArgumentParser(description="Generate publication-ready evaluation figures.")
     parser.add_argument(
         "--figures",
         nargs="+",

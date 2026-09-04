@@ -12,7 +12,7 @@ The R-SIM database itself contains multiple affinity endpoint types (Ka, Kd, Ki,
 
 The independent CSV contains a `KD` column. The executed preprocessing uses `pKd = -log10(KD)` directly. The magnitude of the stored KD values is consistent with molar units, although the local CSV has no explicit unit column.
 
-## Revision implication
+## Modeling implication
 
 The task should be described specifically as Kd-derived pKd prediction, not as a generic mixture of pKa, pKi, IC50, or EC50. A per-assay sensitivity analysis is not supported by the released local schema and this limitation must be disclosed rather than inferred away.
 

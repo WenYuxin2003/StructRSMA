@@ -1,4 +1,4 @@
-# Revision reproducibility materials
+# Evaluation and Reproducibility Materials
 
 - `scripts/`: strict training, overlap, curation, statistics, and plotting code.
 - `configs/`: experiment matrices without local status files.
@@ -9,7 +9,6 @@
 - `results/unified_sca/`: final SCA fair-control/mechanism/cold tables.
 - `results/non_sca/`: non-SCA aggregate, paired, per-target, and Fisher-z tables.
 - `statistics/`: contact and similarity analyses.
-- `figures_r2/`: reviewer figures that do not depend on superseded SCA outputs.
+- `figures_r2/`: evaluation figures in PNG, SVG, and PDF formats.
 
-Runtime logs, smoke-test directories, manuscript files, raw structures, large generated arrays, and superseded SCA outputs are intentionally excluded.
-
+Runtime logs, temporary outputs, raw structures, large generated arrays, and superseded outputs are not included.
